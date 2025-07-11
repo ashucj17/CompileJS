@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(150deg, #02fbfb, #234255);
+    background: linear-gradient(180deg, #02fbfb, #0c2a3c);
 }
 
 #app{
@@ -11,11 +11,12 @@ body{
     text-align: center;
     border: none;
     border-radius: 15px;
-    background: linear-gradient(120deg, #3152e6,#8f70c1);
+    background: linear-gradient(120deg, #3152e6,#840a24);
     color: #fff;
     padding: 15px;
     box-shadow: 0px 0px 10px #02fbfb,0px 0px 20px #02fbfb, 0px 0px 30px #3152e6;
-               
+}
+
 h1{
     font-size: 40px;
 }
