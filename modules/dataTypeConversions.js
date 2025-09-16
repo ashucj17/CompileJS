@@ -68,9 +68,47 @@ let preCounter = 0;
 // post increment
 let x = 10
 let y = x++;
-console.log(x , y)
+// console.log(x , y)
 
 // pre increment
 let a = 10;
 let b = ++a;
-console.log(a , b)
+// console.log(a , b)
+
+function sum(a=5,b=10){
+    // console.log(a+b)
+}
+
+sum(undefined,20)
+
+
+
+let kills = '22';
+// console.log(typeof kills)
+// console.log(typeof (kills))
+
+let newScore = '22aavv'
+// console.log(newScore)
+// console.log(typeof(newScore))
+
+let numScore = Number(newScore)
+// console.log(typeof numScore)
+// console.log(numScore)
+
+let condition = 1;
+let newCondition = Boolean(condition)
+// console.log(condition)
+// console.log(newCondition);
+
+
+let typeDef = NaN;
+// console.log(typeof typeDef ) /* type of  NaN is number */
+
+let str  = "";
+console.log(typeof str) /* type of empty string is string */
+
+let  undefine = undefined
+console.log(typeof undefine) /* type of undefined is undefined */
+
+let nothing  = null;
+console.log(typeof nothing) /* type of null is object */
