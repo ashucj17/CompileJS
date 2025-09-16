@@ -37,7 +37,7 @@ let data = NaN
 // console.log(-true)
 
 // console.log(-'')
-// console.log(+'')
+// console.log(+'') 
 
 // console.log(+false)
 // console.log(-false)
@@ -105,10 +105,35 @@ let typeDef = NaN;
 // console.log(typeof typeDef ) /* type of  NaN is number */
 
 let str  = "";
-console.log(typeof str) /* type of empty string is string */
+// console.log(typeof str) /* type of empty string is string */
 
 let  undefine = undefined
-console.log(typeof undefine) /* type of undefined is undefined */
+// console.log(typeof undefine) /* type of undefined is undefined */
 
 let nothing  = null;
-console.log(typeof nothing) /* type of null is object */
+// console.log(typeof nothing) /* type of null is object */
+
+
+// console.log('2' + 1)  
+
+// console.log(1 + 1 + '1')
+// console.log('1' + 1 + 1)
+
+// console.log(NaN == 0)
+// console.log(NaN >= 0)
+// console.log(NaN <= 0)
+// console.log(NaN == NaN)
+
+/* In case of NaN (Not a Number) which is never equals to anything not even itself  */
+
+
+let i =  10;
+let j = i++;
+console.log(i, j)
+
+let n = 10;
+let m = ++n;
+console.log(n, m)
+
+/* preincrement++: use first then increment
+   ++postinncrement: increment first then use */
