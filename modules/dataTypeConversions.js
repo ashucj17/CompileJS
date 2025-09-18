@@ -129,11 +129,33 @@ let nothing  = null;
 
 let i =  10;
 let j = i++;
-console.log(i, j)
+// console.log(i, j)
 
 let n = 10;
 let m = ++n;
-console.log(n, m)
+// console.log(n, m)
 
 /* preincrement++: use first then increment
    ++postinncrement: increment first then use */
+
+   let id = Symbol("123");
+   let anotherId = Symbol("123");
+
+//    console.log(id === anotherId)
+
+
+let newData = [41,32,49,94,12]
+// console.log(typeof (newData))  /* Object */
+
+let myObject= {
+    id: 141424,
+    name: "ashish",
+    email: 'ashish@amazon.com'
+}
+
+// console.log(myObject)
+// console.log(typeof myObject) /* object */
+
+const summ =(a,b) =>a+b
+console.log(summ(5,5))
+console.log(typeof summ) /* function object */
