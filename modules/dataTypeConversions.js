@@ -157,5 +157,32 @@ let myObject= {
 // console.log(typeof myObject) /* object */
 
 const summ =(a,b) =>a+b
-console.log(summ(5,5))
+/* console.log(summ(5,5))
 console.log(typeof summ) /* function object */
+
+
+
+
+/* stack example: here value of myYoutubeChanel dont change because the copy of the variable is created and the allocated to another variable  */
+let myYoutubename = 'ashish_agnihotri'
+
+let anotherChanel  = myYoutubename;
+anotherChanel = 'agni_ashu'
+
+// console.log(myYoutubename)
+// console.log(anotherChanel)
+
+/* Heap example: The value of email will changed for both the variable as both the variable points to the same reference */
+
+let admin = {
+    name: 'ashish',
+    age: 30,
+    email: 'agnihotri@google.com'
+}
+
+let newAdmin = admin;
+
+newAdmin.email = 'ashu@microsoft.com'
+
+console.log(admin)
+console.log(newAdmin)
