@@ -14,9 +14,16 @@ let lastName = 'Agnihotri'
 let state = "Uttar Pradesh"
 let city = new String('Kanpur');
 
-console.log(state) // permitive string
-console.log(city) // string object (wrapper object)
+// console.log(state) // permitive string
+// console.log(city) // string object (wrapper object)
+
+console.log(city.toUpperCase())
+console.log(state.toUpperCase())
 
 
+console.log(city.length)
+console.log(city.indexOf('a'))
+console.log(state.indexOf('a'))
 
-
+console.log(state.concat( city))
+console.log(city.includes('p'))
