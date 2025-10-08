@@ -17,13 +17,34 @@ let city = new String('Kanpur');
 // console.log(state) // permitive string
 // console.log(city) // string object (wrapper object)
 
-console.log(city.toUpperCase())
-console.log(state.toUpperCase())
+// console.log(city.toUpperCase())
+// console.log(state.toUpperCase())
 
 
-console.log(city.length)
-console.log(city.indexOf('a'))
-console.log(state.indexOf('a'))
+// console.log(city.length)
+// console.log(city.indexOf('a'))
+// console.log(state.indexOf('a'))
 
-console.log(state.concat( city))
-console.log(city.includes('p'))
+// console.log(state.concat( city))
+// console.log(city.includes('p'))
+
+
+let anotherState = state.substring(0,4)
+// console.log(anotherState)
+
+// console.log(state.slice(-11,6))
+
+
+let myURL = 'https://ashish%20agnihotri.com'
+// console.log(myURL)
+// console.log(myURL.replace('%20','-'))
+
+let gameName  = 'ashu_cj_17'
+
+// console.log(gameName.split('_'));
+
+
+let avatr = '   tobi_cyclops  '
+console.log(avatr)
+console.log(avatr.trim())
+
