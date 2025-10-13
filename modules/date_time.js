@@ -16,6 +16,15 @@ let customDate = new Date(2025,12,17);
 
 
 let myTimeStamp = Date.now()
-console.log(myTimeStamp)
-console.log(createdDate.getTime())
-console.log(Math.floor(Date.now()/1000))
+// console.log(myTimeStamp)
+// console.log(createdDate.getTime())
+// console.log(Math.floor(Date.now()/1000))
+
+let now = new Date();
+// console.log(now.toISOString()) /* Output:2025-10-13T12:37:46.401Z : where T is the seperator */
+console.log(now.getDate())
+console.log(now.getDay())
+console.log(now.getHours())
+console.log(now.getMinutes())
+console.log(now.getSeconds())
+console.log(now.getFullYear())
