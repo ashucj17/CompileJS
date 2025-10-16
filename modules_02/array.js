@@ -9,6 +9,19 @@ let myArr_2  = new Array("Ashu","Suchit", "Suchit")
 
 /* Array Method */
 
-myArr.push(8)
+// myArr.push(8)
+
+// myArr.pop()
+// myArr.unshift(9)
+// myArr.shift()
+// console.log(myArr)
+
+/* Questionable property */
+
+console.log(myArr.includes(2))
 console.log(myArr)
+console.log(myArr.indexOf(2))
+console.log(myArr.includes(4))
+
+
 
