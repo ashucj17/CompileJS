@@ -70,6 +70,9 @@ let myDetails = Array.of(id, name, designation)
 // console.log(myDetails)
 
 
-
+let nestedArray = [4,3,6,[7,9,5,[10,70],2,0,[7,9]],10,33]
+console.log(nestedArray.flat(1))
+console.log(nestedArray.flat(2))
+console.log(nestedArray.flat(3))
 
 
