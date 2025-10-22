@@ -41,5 +41,18 @@ const empAddress= {
 // console.log(Object.values(empAddress))
 // console.log(Object.keys(userDetail)) /* returns the data in arrary  */
 // console.log(Object.values(userDetail))
-console.log(Object.entries(empAddress))
-console.log(empAddress.hasOwnProperty('fullAddress'))
+// console.log(Object.entries(empAddress))
+// console.log(empAddress.hasOwnProperty('fullAddress'))
+
+const myCource = {
+    subject: "React",
+    duration: " 30 days",
+    courseInstructor: "Ajay Suneja"
+}
+
+// console.log(myCource.courseInstructor)
+
+// const {courseInstructor} = myCource 
+// console.log(courseInstructor)
+const {courseInstructor: Instructor} = myCource 
+console.log(Instructor)
