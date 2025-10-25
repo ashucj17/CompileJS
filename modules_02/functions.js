@@ -57,4 +57,10 @@ function cart(bucket){
     return `the pirce of the product is ${bucket}`
 }
 
-console.log(cart(price[3]))
+// console.log(cart(price[3]))
+
+function message(){
+    return "hello"
+    // console.log("Hello")
+}
+console.log("message:",message())
