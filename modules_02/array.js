@@ -71,8 +71,21 @@ let myDetails = Array.of(id, name, designation)
 
 
 let nestedArray = [4,3,6,[7,9,5,[10,70],2,0,[7,9]],10,33]
-console.log(nestedArray.flat(1))
-console.log(nestedArray.flat(2))
-console.log(nestedArray.flat(3))
+// console.log(nestedArray.flat(1))
+// console.log(nestedArray.flat(2))
+// console.log(nestedArray.flat(3))
 
+let mydata = [7,8,2,13,15,9,4,6]
+
+// mydata.shift()
+// console.log(mydata.slice(0,4))
+// console.log(mydata.splice(0,1))
+console.log(mydata.sort())
+
+/* the sort methord converts the array method to string hence the 13 comes before 2 becouse the 1 is smaller then 2 */
+
+//  to sort numarically
+
+console.log("asending order",mydata.sort((a,b)=>a-b))  // ascending order
+console.log("Decending order",mydata.sort((a,b)=>b-a))  // descending order
 
