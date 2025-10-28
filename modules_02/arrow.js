@@ -42,4 +42,4 @@ let sub  = (num1,num2) => num1-num2;
 // to access the object inside the function we have to wrapup the object inside the breaces
 
 let message = (username) =>({username: "ashish"})
-console.log(message())
+// console.log(message())
