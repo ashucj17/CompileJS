@@ -58,7 +58,7 @@ Where as the concat() method and spread operator [...]  used to emrge the array 
 
 
 // console.log(Array.isArray("Ashish")) /* isArray() method is used to check whether  the given data is an array or not  */
-// console.log(Array.from('Ashish'))  /* from() method is used to cconvert the data into an array */
+// console.log(Array.from('Ashish'))  /* from() method is used to convert the data into an array */
 // console.log(Array.from({name: 'Ashish'})) /* here it gives the blank object, We have to specify the key or value */
 
 
@@ -80,12 +80,28 @@ let mydata = [7,8,2,13,15,9,4,6]
 // mydata.shift()
 // console.log(mydata.slice(0,4))
 // console.log(mydata.splice(0,1))
-console.log(mydata.sort())
+// console.log(mydata.sort())
 
 /* the sort methord converts the array method to string hence the 13 comes before 2 becouse the 1 is smaller then 2 */
 
 //  to sort numarically
 
-console.log("asending order",mydata.sort((a,b)=>a-b))  // ascending order
-console.log("Decending order",mydata.sort((a,b)=>b-a))  // descending order
+// console.log("asending order",mydata.sort((a,b)=>a-b))  // ascending order
+// console.log("Decending order",mydata.sort((a,b)=>b-a))  // descending order
 
+
+// console.log(Array.from('Ashish Agnihotri'))
+
+
+let collection = ["Ashu","Rahul", "Aman","Deepak", "Riya"]
+
+// console.log(collection.filter((word)=>word.length >4))
+
+
+let data = [6,3,7,9,0,2,4]
+
+console.log(data.reverse())
+console.log(data.toReversed())
+console.log(data)
+
+/* reverse method mutate the new array where as the toReverse  creates a new array and reverse it */
