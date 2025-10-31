@@ -1,6 +1,5 @@
 // For in works on objects, array index
 
-
 let myObject = {
     up: "uttar pradesh",
     mp: "madhya pradesh",

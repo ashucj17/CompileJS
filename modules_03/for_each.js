@@ -10,7 +10,7 @@ coding.forEach(function(item){
 
 // with another function as a parameter
 function printMe(item){
-    console.log(item)
+    // console.log(item)
 }
 // coding.forEach(printMe)
 
@@ -26,5 +26,13 @@ let heroes = [
 ];
 
 heroes.forEach((item)=>{
-    console.log(`The hero name is ${item.name}, his power is ${item.power} and he is from ${item.city}`)
+    // console.log(`The hero name is ${item.name}, his power is ${item.power} and he is from ${item.city}`)
 })
+
+// for each loop only returns from the callback, not from the outer function or loop
+
+let codingLang = coding.forEach((item)=>{
+    return item
+})
+
+console.log(codingLang)
