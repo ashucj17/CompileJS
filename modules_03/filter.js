@@ -1,3 +1,5 @@
+// Filter() returns a new array, it dose not change the original array, if no elements pass the condition it will return an empty array, mostly  work on array of objects
+
 let data = [1,2,3,4,5,6,7,8,9,0]
 
 let filtered = data.filter((num)=>{
