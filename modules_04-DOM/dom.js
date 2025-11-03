@@ -30,3 +30,4 @@ rrHeading.forEach((listItem)=> {console.log(listItem)
     listItem.children[1].innerText = 'Red'
 })
 
+/* ------------------------------------------------------------------ */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Element</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let div = document.createElement('div');
+    console.log(div)
+    div.className = "container"
+    div.id = Math.floor((Math.random() * 10 + 1))
+    div.setAttribute("title", "custom-div")
+    div.style.background = "Magenta"
+    div.style.padding = "12px"
+    div.style.display = "flex"
+    div.style.alignItems = "center"
+    // div.innerText  = "This is the custom div"
+
+    const customText = document.createTextNode('This is custom text using textNode')
+    div.appendChild(customText)
+    document.body.appendChild(div)
+</script>
+</html>

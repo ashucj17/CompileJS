@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent child traversing in DOM</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="days">Monday</div>
+      <div class="days">Tuesday</div>
+      <div class="days">Wednesday</div>
+      <div class="days">Friday</div>
+    </div>
+    <script>
+      let containerDiv = document.querySelector(".parent");
+    //   console.log(containerDiv.children[3].innerHTML = "Thursday");
+    // console.log(containerDiv.children)
+    const dayOne = document.querySelector('.days')
+    console.log(dayOne)
+    console.log(dayOne.nextElementSibling)
+    console.log(dayOne.nextSibling) /* it will return the node,not just the element that even includes the text */
+    console.log(dayOne.parentElement)
+    
+    console.log("Nodes:", containerDiv.childNodes)
+    </script>
+  </body>
+</html>
