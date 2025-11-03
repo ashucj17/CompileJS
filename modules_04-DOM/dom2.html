@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit or Remove Elements</title>
+  </head>
+  <body>
+    <ul class="language"></ul>
+  </body>
+  <script>
+    function addList(langName) {
+      const listItem = document.createElement("li");
+      // console.log(listItem)
+      listItem.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(listItem);
+    }
+    addList("HTML");
+    addList("CSS");
+    addList("Javascript");
+
+    const optimizeWay = (langName) => {
+      const listItem = document.createElement("li");
+      listItem.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(listItem);
+    };
+    optimizeWay("React");
+    optimizeWay("TypeScript");
+
+    // Edit Existing Element
+
+    const targetedChild = document.querySelector("li:nth-child(2)");
+    console.log(targetedChild);
+    //  targetedChild.innerHTML = "Tailwind" /* directly replace the HTML */
+
+    // using replacewith method
+    let newLi = document.createElement("li");
+    newLi.textContent = "Tailwind";
+    targetedChild.replaceWith(newLi);
+
+    // using outer html
+    const firstChild = document.querySelector("li:first-child");
+    firstChild.outerHTML = "<li>Node Js</li>";
+
+    // remove
+    const removeList = document.querySelector("li:last-child");
+    removeList.remove();
+  </script>
+</html>
