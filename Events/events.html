@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <!-- <button id="clicked" onclick="alert('pressed')">Click</button> -->
+    <button id="clicked">Click</button>
+</body>
+    <script>
+    //   document.getElementById('clicked').onclick = ()=> alert('pressed');
+    // attachEvent: was used in intrenet explorer
+    // jQuery- on event
+    document.getElementById('clicked').addEventListener('click',()=>{alert('pressed')})
+    </script>
+</html>
