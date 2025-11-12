@@ -13,6 +13,15 @@
     //   document.getElementById('clicked').onclick = ()=> alert('pressed');
     // attachEvent: was used in intrenet explorer
     // jQuery- on event
-    document.getElementById('clicked').addEventListener('click',()=>{alert('pressed')})
+    // document.getElementById('clicked').addEventListener('click',()=>{alert('pressed')})
+
+    document.getElementById('clicked').addEventListener('click',function(e){
+        console.log(e)
+    },false)
+
+    // type, timestamp, defaultPrevent
+    // target, toElement, srcElement, currenttarget,
+    // clientX,clientY,screenX,screenY,
+    // altkey, ctrlkey, shiftkey,keyCode
     </script>
 </html>
