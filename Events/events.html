@@ -7,6 +7,11 @@
 </head>
 <body>
     <!-- <button id="clicked" onclick="alert('pressed')">Click</button> -->
+    <ul id="unOrdered">
+        <li id="one">ONE</li>
+        <li id="two">TWO</li>
+        <li id="three">THREE</li>
+    </ul>
     <button id="clicked">Click</button>
 </body>
     <script>
@@ -14,14 +19,49 @@
     // attachEvent: was used in intrenet explorer
     // jQuery- on event
     // document.getElementById('clicked').addEventListener('click',()=>{alert('pressed')})
-
-    document.getElementById('clicked').addEventListener('click',function(e){
-        console.log(e)
-    },false)
-
-    // type, timestamp, defaultPrevent
+     // type, timestamp, preventDefault,stopProgationx
     // target, toElement, srcElement, currenttarget,
     // clientX,clientY,screenX,screenY,
     // altkey, ctrlkey, shiftkey,keyCode
+
+    // document.getElementById('clicked').addEventListener('click',function(e){
+    //     console.log(e)
+    // },false)
+
+   /* Bubble effect: buttom up approach
+   
+   document.getElementById('unOrdered').addEventListener('click', function(e){
+    console.log("ul clicked")
+   },false)
+
+   document.getElementById('two').addEventListener('click', function(e){
+    console.log("TWO is clicked")
+   },false) */
+
+/*    Capeturnig mode: Top buttom up approach
+
+document.getElementById('unOrdered').addEventListener('click', function(e){
+    console.log("Ul clicked")
+   }, true)
+
+   document.getElementById('three').addEventListener('click', function(e){
+    console.log('THREE clicked')
+   }, true) */
+
+   document.getElementById('unOrdered').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'LI')
+    {
+
+        const removeLi = e.target;
+        removeLi.remove()
+    }else{
+        console.log("dose not remove the entire list")
+    }
+
+
+    // removeLi.parentElement.removeChild(removeLi)
+
+   })
     </script>
 </html>
