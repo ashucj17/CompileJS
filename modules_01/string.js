@@ -45,6 +45,19 @@ let gameName  = 'ashu_cj_17'
 
 
 let avatr = '   tobi_cyclops  '
-console.log(avatr)
-console.log(avatr.trim())
+// console.log(avatr)
+// console.log(avatr.trim())
 
+let dataBase = [
+    { id: 1, name: "John", age: 25 },
+  { id: 2, name: "Sarah", age: 30 },
+  { id: 3, name: "Mike", age: 28 }
+]
+
+// dataBase.forEach(function(users){
+//     console.log(users.name)
+// })
+
+dataBase.map((users)=>{
+    console.log(users.age<=29)
+})
