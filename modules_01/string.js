@@ -59,5 +59,15 @@ let dataBase = [
 // })
 
 dataBase.map((users)=>{
-    console.log(users.age<=29)
+    // console.log(users.age<=29)
 })
+
+const numbers = [1, 2, 3, 4];
+
+// forEach - just logs, doesn't return anything
+const result = numbers.forEach(function(num) {
+  console.log(num * 2);
+});
+
+console.log(result); // undefined
+
