@@ -20,5 +20,15 @@ users.forEach(function(user) {
   li.textContent = user.name;
   document.getElementById('list').appendChild(li);
 });
-</script>  
+
+const numbers = [1, 2, 3, 4];
+
+// map - returns new array with transformed values
+const doubled = numbers.map(function(num) {
+  return num * 2;
+});
+
+console.log(doubled); // [2, 4, 6, 8]
+console.log(numbers); // [1, 2, 3, 4] (original unchanged)
+</script> 
 </html>
