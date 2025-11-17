@@ -9,7 +9,7 @@
     <ul id="list"></ul>
 </body>
 <script>
-    const users = [
+    /* const users = [
   { name: "John", age: 25 },
   { name: "Sarah", age: 30 }
 ];
@@ -19,7 +19,7 @@ users.forEach(function(user) {
   const li = document.createElement('li');
   li.textContent = user.name;
   document.getElementById('list').appendChild(li);
-});
+}); */
 
 const numbers = [1, 2, 3, 4];
 
@@ -30,5 +30,22 @@ const doubled = numbers.map(function(num) {
 
 console.log(doubled); // [2, 4, 6, 8]
 console.log(numbers); // [1, 2, 3, 4] (original unchanged)
+
+const users = [
+  { name: "John", age: 25 },
+  { name: "Sarah", age: 30 }
+];
+
+// Extract just names
+const names = users.map(function(user) {
+  return user.name;
+});
+console.log(names); // ["John", "Sarah"]
+
+// Create HTML strings
+const listItems = users.map(function(user) {
+  return '<li>' + user.name + '</li>';
+});
+console.log(listItems); // ["<li>John</li>", "<li>Sarah</li>"]
 </script> 
 </html>
